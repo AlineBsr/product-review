@@ -6,29 +6,20 @@
 }
 
 @media screen and (max-width: 1440px) {
-    .pub__img--desktop {
+    .pub__img__desktop{
         display: none;
-
     }
-
 }
 
 @media screen and (max-width: 375px) {
-    .pub__img--mobile {
+    .pub__img__mobile {
         display: none;
-
     }
-
 }
 
 // Very dark blue: hsl(212, 21%, 14%)
 //Dark grayish blue: hsl(228, 12%, 48%)
 //White: hsl(0, 0%, 100%)
-
-
-
-
-
 
 // Main 
 .pub {
@@ -39,18 +30,17 @@
 
 
     &__img {
-
+        
         &--desktop {
-            width: 50%;
-            height: 100%;
+        //    width: 50%;
+        //    height: 100%;
             display: flex;
             justify-content: center;
-
         }
 
         &--mobile {
-            width: 100%;
-            height: 33%;
+        //    width: 100%;
+        //    height: 33%;
             display: flex;
             justify-content: center;
         }
@@ -63,12 +53,10 @@
         &__title {
             color: hsl(228, 12%, 48%);
             margin: 0;
-
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
             font-size: 24px;
             text-transform: uppercase;
-
             display: flex;
             justify-content: center;
         }
@@ -88,10 +76,10 @@
             font-size: 16px;
             color: hsl(228, 12%, 48%);
             margin-bottom: 20px;
-
         }
     }
 
+        
     &__price {
         display: flex;
         flex-direction: row;
@@ -101,21 +89,18 @@
         align-content: flex-start;
 
         &__discounted {
-
-            color: hsl(158, 36%, 37%);
+            &:hover {
+             //   background-color: darken(hsl(158, 36%, 37%), 10%);
+                color:  hsl(158, 36%, 37%); // white;
+            }
+            color: black; // hsl(158, 36%, 37%);
             font-family: 'Fraunces', serif;
             font-size: 22px;
             width: 50%;
             margin-right: 10px;
-            transition: background-color 1s ease;
+           // transition: background-color 1s ease;
             transition: color 1s ease;
 
-            &:hover {
-
-                background-color: darken(hsl(158, 36%, 37%), 10%);
-
-                color: white;
-            }
         }
 
         &__original {
